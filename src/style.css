@@ -1,29 +1,107 @@
 @font-face {
+    font-family: 'Mexicana';
+    src: url('./Mexicana.ttf');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./Helvetica-Neue-97-Black-Condensed.ttf');
+}
+
+@font-face {
     font-family: 'Raleway';
     src: url('./Raleway-VariableFont_wght.ttf') format('ttf'),
         url('./Raleway-Italic-VariableFont_wght.ttf') format('ttf') font-italic;
-
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-    background-color: black;
+    background-color: white;
     font-size: 16px;
 }
 
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
 header {
-    background-color: black;
+    background-color: transparent;
     padding-top: .5rem;
+    padding-left: 1%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 6rem;
+    text-transform: uppercase;
+
 }
 
 h1 {
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    font-family: 'Helvetica Neue';
+    color: #ffffff;
+}
+
+h2 {
+    background-color: transparent;
     font-size: 2.5rem;
-    font-weight: normal;
-    font-family: 'Raleway', Courier, monospace;
+    font-family: 'Mexicana','Raleway', Courier, monospace;
+    color: white;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./generic-tacos.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-box {
+    background-color: transparent;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 80vh;
+}
+
+.home-box .inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    height: 90%;
+    padding-top: 3rem;
+    background-color: transparent;
+}
+.home-box .taco-icon {
+    background-color: transparent;
+    width: 13rem;
+    height: 13rem;
+    filter: invert(93%) sepia(0%) saturate(29%) hue-rotate(101deg) brightness(100%) contrast(107%);
+}
+
+.home-box .inner-box .taco-icon {
 
 }
