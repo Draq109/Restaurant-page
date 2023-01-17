@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('./Raleway-VariableFont_wght.ttf') format('ttf'),
-        url('./Raleway-Italic-VariableFont_wght.ttf') format('ttf') font-italic;
+    src: url('./Raleway-VariableFont_wght.ttf'),
+        url('./Raleway-Italic-VariableFont_wght.ttf') font-italic;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
@@ -46,7 +46,9 @@ header {
 
 }
 
-h1 {
+button {
+    all: unset;
+    padding: .5rem .5rem;
     background-color: transparent;
     font-size: 1.3rem;
     font-weight: lighter;
@@ -54,10 +56,19 @@ h1 {
     color: #ffffff;
 }
 
+button:hover {
+    outline: white 5px auto;
+    transform: translateY(4px);
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
 h2 {
     background-color: transparent;
     font-size: 2.5rem;
-    font-family: 'Mexicana','Raleway', Courier, monospace;
+    font-family: 'Mexicana', 'Raleway', Courier, monospace;
     color: white;
 }
 
@@ -67,13 +78,13 @@ h2 {
     width: 100%;
     flex-direction: column;
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./generic-tacos.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./generic-tacos.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.home-box {
+.main-box {
     background-color: transparent;
     align-self: center;
     display: flex;
@@ -84,6 +95,17 @@ h2 {
     height: 80vh;
 }
 
+.about-box .inner-box{
+    width: 50%;
+    background-color: transparent;
+}
+
+.about-box .inner-box p{
+    background-color: transparent;
+    font-family: 'Raleway';
+    font-size: 1.3rem;
+}
+
 .home-box .inner-box {
     display: flex;
     flex-direction: column;
@@ -92,9 +114,10 @@ h2 {
     gap: 2rem;
     width: 80%;
     height: 90%;
-    padding-top: 3rem;
+    padding-top: 1rem;
     background-color: transparent;
 }
+
 .home-box .taco-icon {
     background-color: transparent;
     width: 13rem;
@@ -102,6 +125,36 @@ h2 {
     filter: invert(93%) sepia(0%) saturate(29%) hue-rotate(101deg) brightness(100%) contrast(107%);
 }
 
-.home-box .inner-box .taco-icon {
+.home-box .inner-box .taco-icon {}
 
+.footer {
+    background-color: #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    margin-top: auto;
+    height: 2.5rem;
+}
+.locations,
+.contact, 
+.catering, 
+.espanol {
+    all: unset;
+    font-family: 'Raleway';
+    font-size: .6rem;
+}
+
+.locations {
+    margin-left: 40%;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    background-color: transparent;
+}
+
+.twitter {
+    margin-right: auto;
 }

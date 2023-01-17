@@ -8,13 +8,12 @@ function createHomeDiv(className) {
 
     tacoIcon.src = icon;
     
-    mainBox.setAttribute('class', className);
+    mainBox.setAttribute('class', className + ' main-box');
     innerBox.setAttribute('class', 'inner-box');
     tacoIcon.setAttribute('class', 'taco-icon');
     title.innerHTML = 'Taco ‘Bout It';
     innerBox.appendChild(tacoIcon);
     innerBox.appendChild(title);
-    innerBox.appendChild(tacoIcon);
     mainBox.appendChild(innerBox);
 
     return mainBox;
