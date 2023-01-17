@@ -1,6 +1,7 @@
 import './style.css'
 import { createHomeDiv } from './home-tab-content';
 import { createAboutDiv } from './about-tab-content';
+import { createMenuDiv } from './menu-tab-content';
 import fbIcon from './fb-icon.svg';
 import instaIcon from './instagram-icon.svg';
 import twitterIcon from './twitter-icon.svg';
@@ -96,11 +97,12 @@ homeTab[0].addEventListener('click', function () {
 
 aboutTab[0].addEventListener('click', function () {
     let current = document.getElementsByClassName('main-box');
-    let classNames = current[0].getAttribute('class');
-    if(classNames == 'home-box'){
-        return;
-    }
     content.replaceChild(createAboutDiv('about-box'),current[0]);
+});
+
+menuTab[0].addEventListener('click', function () {
+    let current = document.getElementsByClassName('main-box');
+    content.replaceChild(createMenuDiv('menu-box'),current[0]);
 });
 
 

@@ -14,6 +14,13 @@
         url('./Raleway-Italic-VariableFont_wght.ttf') font-italic;
 }
 
+@font-face {
+    font-family: 'Lovers Quarrel';
+    src: url('./LoversQuarrel-Regular.ttf');
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 * {
@@ -95,17 +102,6 @@ h2 {
     height: 80vh;
 }
 
-.about-box .inner-box{
-    width: 50%;
-    background-color: transparent;
-}
-
-.about-box .inner-box p{
-    background-color: transparent;
-    font-family: 'Raleway';
-    font-size: 1.3rem;
-}
-
 .home-box .inner-box {
     display: flex;
     flex-direction: column;
@@ -125,7 +121,28 @@ h2 {
     filter: invert(93%) sepia(0%) saturate(29%) hue-rotate(101deg) brightness(100%) contrast(107%);
 }
 
-.home-box .inner-box .taco-icon {}
+.about-box .inner-box{
+    background-color: transparent;
+    width: 80%;
+    margin-left: 1rem;
+}
+
+.about-box .inner-box p{
+    background-color: transparent;
+    font-family: 'Lovers Quarrel';
+    font-size: 4rem;
+}
+
+.menu-box .inner-box{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-box .inner-box img {
+    max-width: 50%;
+}
 
 .footer {
     background-color: #c0c0c0;

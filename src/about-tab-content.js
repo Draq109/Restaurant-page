@@ -4,6 +4,7 @@ function createAboutDiv(className) {
     const paragraph = document.createElement('p');
     mainBox.setAttribute('class', className + ' main-box');
     innerBox.setAttribute('class', 'inner-box');
+    paragraph.setAttribute('class','about-text')
     paragraph.innerHTML = 'Sirloin, chicken, bistek, shrimp, barbacoa, pork adobado, you name it! \nTaco \'Bout it consists of over 20 locations in 11 cities, with more to come.';
     innerBox.appendChild(paragraph);
 
